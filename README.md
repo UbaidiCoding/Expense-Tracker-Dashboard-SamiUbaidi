@@ -42,5 +42,5 @@ expense-tracker/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com//expense-tracker.git
+   git clone [https://github.com//expense-tracker.git](https://github.com/UbaidiCoding/Expense-Tracker-Dashboard-SamiUbaidi#diff-cf523a0df9cf8719af2241318ac1784777fe82398049e575d6e0ac4617583db7)
    cd expense-tracker
