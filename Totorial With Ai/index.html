@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>💰 Expense Tracker Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Add New Entry</h2>
+      <form id="transaction-form">
+        <input type="text" id="title" placeholder="Title (e.g., Salary, Rent)" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <input type="date" id="date" required />
+        <select id="category">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="summary-section">
+      <div class="summary-card">
+        <h3>Total Income</h3>
+        <p id="total-income">$0.00</p>
+      </div>
+      <div class="summary-card">
+        <h3>Total Expense</h3>
+        <p id="total-expense">$0.00</p>
+      </div>
+      <div class="summary-card">
+        <h3>Balance</h3>
+        <p id="balance">$0.00</p>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <h2>Filter</h2>
+      <label for="filter-category">Category:</label>
+      <select id="filter-category">
+        <option value="all">All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <label for="filter-date">Date:</label>
+      <input type="month" id="filter-date" />
+    </section>
+
+    <section class="transactions-section">
+      <h2>Transaction History</h2>
+      <ul id="transaction-list"></ul>
+    </section>
+
+    <section class="charts-section">
+      <h2>Visual Summary</h2>
+      <canvas id="pie-chart"></canvas>
+      <canvas id="bar-chart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Samiullah Samejo © 2025</p>
+  </footer>
+
+  <!-- Chart.js CDN -->
+  <script src="chart.min.js"></script>
+    <!-- External Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
