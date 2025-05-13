@@ -25,8 +25,8 @@ expense-tracker/
 
 ---
 
-## 🖼️ Screenshot
-
+## 🖼️Preview
+https://expensetrackerdashboardsami.netlify.app/
 ---
 
 ## ⚙️ Technologies Used
